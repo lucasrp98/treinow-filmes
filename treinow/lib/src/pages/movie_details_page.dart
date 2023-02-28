@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import '../models/movie_model.dart';
 
-import '../../models/movie_model.dart';
 
 class MovieDetailsPage extends StatelessWidget {
   final Movie movie;
@@ -26,7 +26,7 @@ class MovieDetailsPage extends StatelessWidget {
             ),
             Center(
               child: Image.network(
-                movie.img,
+                movie.posterPath,
                 width: 300,
               ),
             ),
